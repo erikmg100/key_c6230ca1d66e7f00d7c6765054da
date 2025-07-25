@@ -4,10 +4,11 @@ import cors from 'cors';
 const app = express();
 const port = process.env.PORT || 3001;
 
-// Configure CORS
+// Configure CORS - Updated to include new frontend URL
 app.use(cors({
   origin: [
-    'https://your-frontend-domain.vercel.app', // Update this with your actual frontend URL
+    'https://meet-gabbi-frontend-new.vercel.app',
+    'https://frontend-eight-zeta-72.vercel.app',
     'http://localhost:3000',
     'http://localhost:5173'
   ],
